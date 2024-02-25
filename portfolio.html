@@ -11,110 +11,94 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<header>
-    <nav class="header-nav">
-        <a class="header-logo" href="./index.html">WebStudio</a>
-        <ul class="header-nav-list">
-            <li><a class="header-nav-link" href="./index.html">Studio</a></li>
-            <li><a class="header-nav-link" href="./portfolio.html">Portfolio</a></li>
-            <li><a class="header-nav-link" href="#">Contacts </a></li>
+<header class="header">
+    <nav>
+        <a href="./index.html" class="link logo"><span class="logo-text">Web</span>Studio</a>
+        <ul class="nav-list">
+            <li><a class="nav-link" href="./index.html">Studio</a></li>
+            <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="nav-link" href="#">Contacts </a></li>
         </ul>
     </nav>
-    <address class="header-address">
-        <ul>
-            <li><a class="header-address-link" href="mailto:info@dewstudio">info@dewstudio</a></li>
-            <li><a class="header-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+    <address>
+        <ul class="auth-nav">
+            <li><a class="auth-link" href="mailto:info@dewstudio">info@dewstudio</a></li>
+            <li><a class="auth-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
 </header>
 <main>
-    <h1 class="visually-hidden">Portfolio</h1>
-    <ul class="button-list">
+    <section id="portfolio">
+    <h1 class="hidden">Portfolio</h1>
+    <ul class="filters-list">
         <li>
-            <button type="button">All</button>
+            <button type="button" class="filter-btn active">All</button>
         </li>
         <li>
-            <button type="button">Web Site</button>
+            <button type="button" class="filter-btn">Web Site</button>
         </li>
         <li>
-            <button type="button">App</button>
+            <button type="button" class="filter-btn">App</button>
         </li>
         <li>
-            <button type="button">Design</button>
+            <button type="button" class="filter-btn">Design</button>
         </li>
         <li>
-            <button type="button">Marketing</button>
+            <button type="button" class="filter-btn">Marketing</button>
         </li>
     </ul>
-    <ul class="portfolio-list">
-        <li>
-            <a href="#">
+    <ul class="projects-list">
+        <li class="project-card">
                 <img src="./images/img5.jpg" alt="Banking App Interface Concept" width="360" height="300">
-                <h2 class="portfolio-title">Banking App Interface Concept</h2>
-                <p class="portfolio-text">App</p>
-            </a>
+                <h2 class="sub-title">Banking App Interface Concept</h2>
+                <p>App</p>
         </li>
-        <li>
-            <a href="#">
+        <li class="project-card">
                 <img src="./images/img6.jpg" alt="Cashless Payment" width="360" height="300">
-                <h2>Cashless Payment</h2>
-                <p class="portfolio-text">Marketing</p>
-            </a>
+                <h2 class="sub-title">Cashless Payment</h2>
+                <p>Marketing</p>
         </li>
-        <li>
-            <a href="#">
+        <li class="project-card">
                 <img src="./images/img7.jpg" alt="Meditation App" width="360" height="300">
-                <h2>Meditation App</h2>
-                <p class="portfolio-text">App</p>
-            </a>
+                <h2 class="sub-title">Meditation App</h2>
+                <p>App</p>
         </li>
-        <li>
-            <a href="#">
+        <li class="project-card">
                 <img src="./images/img8.jpg" alt="Taxi Service" width="360" height="300">
-                <h2>Taxi Service</h2>
-                <p class="portfolio-text">Marketing</p>
-            </a>
+                <h2 class="sub-title">Taxi Service</h2>
+                <p>">Marketing</p>
         </li>
-        <li>
-            <a href="#">
+        <li class="project-card">
                 <img src="./images/img9.jpg" alt="Screen Illustrations" width="360" height="300">
-                <h2>Screen Illustrations</h2>
-                <p class="portfolio-text">Design</p>
-            </a>
+                <h2 class="sub-title">Screen Illustrations</h2>
+                <p>">Design</p>
         </li>
-        <li>
-            <a href="#">
+        <li class="project-card">
                 <img src="./images/img10.jpg" alt="Online Courses" width="360" height="300">
-                <h2>Online Courses</h2>
-                <p class="portfolio-text">Marketing</p>
-            </a>
+                <h2 class="sub-title">Online Courses</h2>
+                <p>Marketing</p>
         </li>
-        <li>
-            <a href="#">
+        <li class="project-card">
                 <img src="./images/img11.jpg" alt="Instagram Stories Concept" width="360" height="300">
-                <h2>Instagram Stories Concept</h2>
-                <p class="portfolio-text">Design</p>
-            </a>
+                <h2 class="sub-title">Instagram Stories Concept</h2>
+                <p>Design</p>
         </li>
-        <li>
-            <a href="#">
+        <li class="project-card">
                 <img src="./images/img12.jpg" alt="Organic Food" width="360" height="300">
-                <h2>Organic Food</h2>
-                <p class="portfolio-text">Web Site</p>
-            </a>
+                <h2 class="sub-title">Organic Food</h2>
+                <p>Web Site</p>
         </li>
-        <li>
-            <a href="#">
+        <li class="project-card">
                 <img src="./images/img13.jpg" alt="Fresh Coffee" width="360" height="300">
-                <h2>Fresh Coffee</h2>
-                <p class="portfolio-text">Web Site</p>
-            </a>
+                <h2 class="sub-title">Fresh Coffee</h2>
+                <p>Web Site</p>
         </li>
     </ul>
+    </section>
 </main>
 <footer class="footer">
-    <a class="footer-logo" href="./index.html">WebStudio</a>
-    <p class="footer-text">> Increase the flow of customers and sales for your business with digital marketing & growth
+    <a href="./index.html" class="link logo footer-logo"><span class="logo-text">Web</span>Studio</a>
+    <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth
         solutions.
 </footer>
 </body>
